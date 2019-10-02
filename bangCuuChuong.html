@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let cell;
+        cell = "<table border='1' width='600' cellspacing='0' cellpadding='3'>"
+        for (i = 1; i <= 9; i++) {
+            cell = cell + "<tr>";
+            for (j = 2; j <= 9; j++) {
+                var result = i*j;
+                cell = cell + "<td>" + j+" x "+i+" = "+result+ "</td>";
+            }
+            cell = cell + "</tr>";
+        }
+        cell = cell + "</table>";
+        document.write(cell);
+    </script>
+</script>
+</body>
+</html>
